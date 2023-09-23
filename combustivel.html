@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Gasto de Combustível</title>
+    <style>
+        /* Estilos CSS opcionais para melhorar a aparência */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" href="home.html">PÁGINA PRINCIPAL</a>
+        </nav>
+      </div>
+    <h1>Calculadora de Gasto de Combustível</h1>
+    <label for="quilometragem">Quilometragem percorrida (km):</label>
+    <input type="number" id="quilometragem"><br>
+    <label for="valorCombustivel">Valor do combustível (R$/litro):</label>
+    <input type="number" id="valorCombustivel"><br><br>
+    <button onclick="calcularGasto()">Calcular Gasto</button>
+    <p>Gasto de Combustível:</p>
+    <div id="resultado"></div>
+
+    <script src="combustivel.js"></script>
+</body>
+</html>

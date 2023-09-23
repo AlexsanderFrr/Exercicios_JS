@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversor de Temperatura</title>
+    <style>
+      /* Estilos CSS opcionais para melhorar a aparência */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .navbar a {
+        color: white;
+      }
+
+      /* Estilos para o texto do navbar */
+      .navbar-text {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="home.html">PÁGINA PRINCIPAL</a>
+      </nav>
+    </div>
+
+    <h1>Conversor de Temperatura</h1>
+    <label for="temperatura">Informe a temperatura:</label>
+    <input type="number" id="temperatura" /><br /><br />
+    <label for="escala">Selecione a escala:</label>
+    <select id="escala">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+    <button onclick="converterTemperatura()">Converter</button>
+    <p>Resultado:</p>
+    <div id="resultado"></div>
+
+    <script src="temperatura.js"></script>
+  </body>
+</html>
